@@ -1,0 +1,42 @@
+body{
+    background: linear-gradient(to bottom, #1a1a1a, #444);
+    height: 100vh;
+    margin: 30px;
+}
+h2{
+    color:rgb(210, 216, 233);
+    font-size: 30px;
+    font-family:  'Poppins', sans-serif;
+
+}
+
+.navbar{
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    border-radius:30px;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar li {
+    display: inline;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+.navbar a:hover {
+    color: rgb(152, 171, 180);
+}
