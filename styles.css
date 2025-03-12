@@ -1,42 +1,124 @@
 body{
-    background: linear-gradient(to bottom, #1a1a1a, #444);
-    height: 100vh;
-    margin: 30px;
+    background-color: beige;
+    font-family: "Ubuntu", sans-serif;
+    margin: 90px;
 }
+h1{
+    margin: 50px;
+    font-size: 70px;
+}
+h2.resalt{
+    font-family:"Josefin Sans", sans-serif;
+    font-optical-sizing:unset;
+    font-weight: normal;
+    margin-left: 20px;
+    color: darkgreen;
+}
+
 h2{
-    color:rgb(210, 216, 233);
+    /* font-size: 38px ; */
+    
+    font-family:"Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
     font-size: 30px;
-    font-family:  'Poppins', sans-serif;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.img_cont{
+    display: block;
+    margin: 0 auto; 
+    border-radius: 20%;
+    width: 20%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Sombra de la imagen */
+    height: auto; /* Mantiene las proporciones */
+    margin-right: 50px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 50px;
+
 
 }
 
-.navbar{
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    position: sticky;
-    border-radius:30px;
+
+img{
+    display: block;
+    margin-top: 40px; 
+    width: 75%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Sombra de la imagen */
+    height: auto; /* Mantiene las proporciones */
+    margin-right: 50px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 50px;
+
+
+}
+
+.contenedor{
+    display: flex; /* Hace que los elementos hijos (imagen y texto) se alineen en una fila */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* ESTILOS DE LAS TABLAS */
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina espacios entre celdas */
+    margin-bottom: 50px;
+}
+
+th, td {
+    border: 1px solid #8cb38b; /* Bordes grises */
+    padding: 10px;
+    text-align: left;
+
+}
+
+th {
+    background-color: #e2e1a0; /* Fondo gris claro para los encabezados */
+}
+
+tr:nth-child(even) {
+    background-color: #cfeeb5; /* Fondo alterno para las filas */
+}
+
+tr:hover {
+    background-color: #eefcbd; /* Cambio de color al pasar el mouse */
+}
+
+
+/* ESTILO DEL MENU DE LOS TEMAS DE LA CLASE---------------- */
+
+nav {
+    background-color: #222;
+    position: fixed; /* Hace que el menú quede fijo en la parte superior */
+    width: 100%;
     top: 0;
-    z-index: 10;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    left: 0;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    padding: 10px 0;
 }
 
-.navbar ul {
+nav ul {
     list-style: none;
-    display: flex;
-    gap: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
-.navbar li {
+
+nav ul li {
     display: inline;
+    margin: 0 15px;
 }
-.navbar a {
+
+nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
-    transition: color 0.3s;
+    font-size: 18px;
+    padding: 10px;
+    transition: 0.3s;
 }
-.navbar a:hover {
-    color: rgb(152, 171, 180);
+
+nav ul li a:hover {
+    background-color: #dad07c;
+    color: #222;
+    padding: 10px;
+    border-radius: 5px;
 }
