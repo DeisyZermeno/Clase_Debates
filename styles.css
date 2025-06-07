@@ -1,30 +1,54 @@
-body{
-    background-color: beige;
-    font-family: "Ubuntu", sans-serif;
-    margin: 90px;
-}
-h1{
-    margin: 50px;
-    font-size: 70px;
-}
-h2.resalt{
-    font-family:"Josefin Sans", sans-serif;
-    font-optical-sizing:unset;
-    font-weight: normal;
-    margin-left: 20px;
-    color: darkgreen;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #2e2e2e;
+  background-color: #f8f8eb;
 }
 
-h2{
-    /* font-size: 38px ; */
-    
+
+h1 {
+    font-size: 48px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #3a5a40;
+    border-bottom: 2px solid #c5e1a5;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 850px;
+    margin: 0 auto 20px auto;
+    padding: 0 20px;
+    color: #333;
+}
+
+h2.resalt {
+    color: #1b4332;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+section {
+    margin-bottom: 100px;
+    padding: 0 20px;
+}
+
+
+p{
     font-family:"Josefin Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 30px;
-    font-weight: normal;
+    font-size: 25px;
+    color: rgba(115, 40, 5, 0.585);
+    font-weight: bold ;
     margin-left: 20px;
 }
-
 .img_cont{
     display: block;
     margin: 0 auto; 
@@ -45,8 +69,10 @@ img{
     width: 75%; /* Hace que la imagen ocupe todo el ancho del contenedor */
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Sombra de la imagen */
     height: auto; /* Mantiene las proporciones */
-    margin-right: 50px; /* Espacio entre la imagen y el texto */
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    margin: 0 auto;
+
+
 
 
 }
@@ -87,7 +113,7 @@ tr:hover {
 /* ESTILO DEL MENU DE LOS TEMAS DE LA CLASE---------------- */
 
 nav {
-    background-color: #222;
+    background-color: #070e0b; 
     position: fixed; /* Hace que el menú quede fijo en la parte superior */
     width: 100%;
     top: 0;
@@ -110,7 +136,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(221, 243, 221);
     font-size: 18px;
     padding: 10px;
     transition: 0.3s;
@@ -121,4 +147,57 @@ nav ul li a:hover {
     color: #222;
     padding: 10px;
     border-radius: 5px;
+}
+
+
+
+/* Scroll suave para navegación */
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  color: #2f4f4f;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* Botones estilizados */
+.boton {
+  background-color: #6b8e23;
+  color: rgb(12, 17, 11);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #3a5a40;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img_cont {
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  nav {
+    padding: 10px;
+  }
 }
